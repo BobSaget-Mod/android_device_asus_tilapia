@@ -1,5 +1,6 @@
 # SIM Toolkit
 PRODUCT_PACKAGES += \
+    CellBroadcastReceiver \
     Mms \
     rild \
     Stk \
