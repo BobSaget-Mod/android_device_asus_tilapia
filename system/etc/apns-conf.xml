@@ -8,15 +8,6 @@
       type="default,supl"
   />
 
-  <apn carrier="Vf Tethering"
-      mcc="202"
-      mnc="05"
-      apn="internet"
-      user="user"
-      password="pass"
-      type="default,supl"
-  />
-
   <apn carrier="Vf Kartointernet"
       mcc="202"
       mnc="05"
@@ -223,6 +214,15 @@
       type="default,supl"
   />
 
+  <apn carrier="Vodafone ES"
+      mcc="214"
+      mnc="01"
+      apn="aritelwap.es"
+      user="wap@wap"
+      password="wap125"
+      type="default"
+  />
+
   <apn carrier="INTERNET"
       mcc="214"
       mnc="01"
@@ -241,13 +241,22 @@
       type="default,supl"
   />
 
+  <apn carrier="Orange Internet Móvil"
+      mcc="214"
+      mnc="03"
+      apn="orangeworld"
+      user="orange"
+      password="orange"
+      type="default"
+  />
+
   <apn carrier="Orange Internet"
       mcc="214"
       mnc="03"
       apn="internet"
-      user="CLIENTE"
-      password="AMENA"
-      type="default,supl"
+      user="orange"
+      password="orange"
+      type="default"
   />
 
   <apn carrier="Orange HTTP"
@@ -281,8 +290,11 @@
       mcc="214"
       mnc="07"
       apn="movistar.es"
-      user="MOVISTAR"
-      password="MOVISTAR"
+      user="movistar"
+      password="movistar"
+      mmsc="http://mmsc.movistar.com"
+      mmsproxy="10.138.255.5"
+      mmsport="8080"
       type="default,supl"
   />
 
@@ -395,14 +407,12 @@
       type="default,supl"
   />
 
-  <apn carrier="Broadband"
+  <apn carrier="Vipnet"
       mcc="219"
       mnc="10"
       apn="data.vip.hr"
       user="38591"
       password="38591"
-      proxy="212.91.99.91"
-      port="8080"
       type="default,supl"
   />
 
@@ -446,7 +456,7 @@
       type="default,supl"
   />
 
-  <apn carrier="Vip GPRS"
+  <apn carrier="vipmobile"
       mcc="220"
       mnc="05"
       apn="vipmobile"
@@ -454,6 +464,9 @@
       password="vipmobile"
       proxy="212.15.182.82"
       port="8080"
+      mmsc="http://mmsc.vipmobile.rs/"
+      mmsproxy="212.15.182.82"
+      mmsport="8080"
       type="default,supl"
   />
 
@@ -471,11 +484,18 @@
       type="default,supl"
   />
 
-  <apn carrier="Wind Internet"
+  <apn carrier="INTERNET WIND"
       mcc="222"
       mnc="88"
-      apn="internet.wind"
+      apn="Internet.wind"
       type="default,supl"
+  />
+
+  <apn carrier="INTERNET WINDBIZ"
+      mcc="222"
+      mnc="88"
+      apn="Internet.wind.biz"
+      type="default"
   />
 
   <apn carrier="Wind HTTP"
@@ -492,15 +512,13 @@
   <apn carrier="3 Italia"
       mcc="222"
       mnc="99"
-      apn="datacard.tre.it"
-      type="default,supl"
-  />
-
-  <apn carrier="3 Italia Ricaricabile"
-      mcc="222"
-      mnc="99"
       apn="tre.it"
-      type="default,supl"
+      user=""
+      password=""
+      mmsc="http://10.216.59.240:10021/mmsc"
+      mmsproxy="62.13.171.3"
+      mmsport="8799"
+      type="default,mms,supl"
   />
 
   <apn carrier="Vodafone live! PRE"
@@ -615,20 +633,18 @@
       mcc="232"
       mnc="01"
       apn="a1.net"
-      user="ppp@a1plus.at"
-      password="ppp"
+      user="ppp@A1plus.at"
+      password="PPP"
+      mmsc="http://mmsc.A1.net"
+      mmsproxy="194.48.124.71"
+      mmsport="8001"
       type="default,supl"
   />
 
-  <apn carrier="T-Mobile A"
+  <apn carrier="T-Mobile AT Internet"
       mcc="232"
       mnc="03"
       apn="gprsinternet"
-      user="t-mobile"
-      password="tm"
-      mmsc="http://mmsc.t-mobile.at/servlets/mms"
-      mmsproxy="010.012.000.020"
-      mmsport="80"
       type="default,supl"
   />
 
@@ -783,6 +799,13 @@
       type="default,supl"
   />
 
+  <apn carrier="3 Danmark"
+      mcc="238"
+      mnc="06"
+      apn="bredbank.tre.dk"
+      type="default"
+  />
+
   <apn carrier="Oister"
       mcc="238"
       mnc="06"
@@ -841,7 +864,10 @@
       mcc="240"
       mnc="02"
       apn="data.tre.se"
-      type="default,supl"
+      mmsc="http://mms.tre.se"
+      mmsproxy="mmsproxy.tre.se"
+      mmsport="8799"
+      type="default,supl,mms"
   />
 
   <apn carrier="Tele2 Internet"
@@ -856,6 +882,13 @@
       mnc="07"
       apn="internet.ventelo.se"
       type="default,supl"
+  />
+
+  <apn carrier="Telenor Data"
+      mcc="240"
+      mnc="08"
+      apn="internet.telenor.se"
+      type="default"
   />
 
   <apn carrier="Cellip"
@@ -903,11 +936,20 @@
       type="default,supl"
   />
 
-  <apn carrier="Tele2"
+  <apn carrier="Chess Internet"
+      mcc="242"
+      mnc="02"
+      apn="internet.netcom.no"
+      type="default,supl"
+  />
+
+  <apn carrier="Tele2 Internet"
       mcc="242"
       mnc="04"
       apn="internet.tele2.no"
-      type="default,supl"
+      proxy="130.244.196.90"
+      port="8080"
+      type="default"
   />
 
   <apn carrier="NMN Internet"
@@ -1135,7 +1177,7 @@
       type="default,supl"
   />
 
-  <apn carrier="Orange Internet"
+  <apn carrier="Orange PL"
       mcc="260"
       mnc="03"
       apn="internet"
@@ -1347,7 +1389,7 @@
       type="default,supl,mms"
   />
 
-  <apn carrier="Vodafone Net2"
+  <apn carrier="Vodafone PT Internet"
       mcc="268"
       mnc="01"
       apn="net2.vodafone.pt"
@@ -1371,7 +1413,7 @@
   <apn carrier="TMN Internet"
       mcc="268"
       mnc="06"
-      apn="internet"
+      apn="Internet"
       type="default,supl"
   />
 
@@ -1448,11 +1490,33 @@
       type="default,supl"
   />
 
+  <apn carrier="Cyta"
+      mcc="280"
+      mnc="01"
+      apn="Cytamobile"
+      mmsc="http://mmsc.cyta.com.cy"
+      mmsproxy="212.31.96.161"
+      mmsport="8080"
+      type="default,mms"
+  />
+
   <apn carrier="M-Tel"
       mcc="284"
       mnc="01"
       apn="inet-gprs.mtel.bg"
       type="default,supl"
+  />
+
+  <apn carrier="Vivacom"
+      mcc="284"
+      mnc="03"
+      apn="internet.vivacom.bg"
+      user="VIVACOM"
+      password="VIVACOM"
+      mmsc="http://mmsc.vivatel.bg"
+      mmsproxy="192.168.123.123"
+      mmsport="8080"
+      type="default,mms"
   />
 
   <apn carrier="Turkcell Internet"
@@ -1562,6 +1626,24 @@
       user="tusmobil"
       password="internet"
       type="default,supl"
+  />
+
+  <apn carrier="Internet"
+      mcc="294"
+      mnc="03"
+      apn="Vipoperator"
+      user="VIPOPERATOR"
+      password="VIPOPERATOR"
+      proxy="78.40.0.1"
+      port="8080"
+      type="default"
+  />
+
+  <apn carrier="Videotron"
+      mcc="302"
+      mnc="500"
+      apn="media.videotron"
+      type="default"
   />
 
   <apn carrier="Rogers"
@@ -2863,6 +2945,18 @@
       type="default,supl"
   />
 
+  <apn carrier="3G Portal"
+      mcc="425"
+      mnc="01"
+      apn="uwap.orange.co.il"
+      user="orange"
+      password="mobile54"
+      mmsc="http://192.168.220.15/servlets/mms"
+      mmsproxy="192.118.11.55"
+      mmsport="8080"
+      type="default,mms"
+  />
+
   <apn carrier="IL Orange"
       mcc="425"
       mnc="01"
@@ -2870,11 +2964,27 @@
       type="default,supl,mms"
   />
 
+  <apn carrier="Cellcom Internet"
+      mcc="425"
+      mnc="02"
+      apn="sphone"
+      type="default"
+  />
+
   <apn carrier="IL Cellcom"
       mcc="425"
       mnc="02"
       apn="internetg"
       type="default,supl,mms"
+  />
+
+  <apn carrier="Sphone Pelephone"
+      mcc="425"
+      mnc="03"
+      apn="sphone.pelephone.net.il"
+      user="pcl@3g"
+      password="pcl"
+      type="default"
   />
 
   <apn carrier="IL Pelephone"
@@ -2891,6 +3001,34 @@
       type="default,supl,mms"
   />
 
+  <apn carrier="Hot Mobile 3G"
+      mcc="425"
+      mnc="07"
+      apn="net.hotm"
+      type="default"
+  />
+
+  <apn carrier="Golan Telecom 3G"
+      mcc="425"
+      mnc="08"
+      apn="internet.golantelecom.net.il"
+      type="default"
+  />
+
+  <apn carrier="Youphone Data"
+      mcc="425"
+      mnc="14"
+      apn="data.youphone.co.il"
+      type="default"
+  />
+
+  <apn carrier="Home Cellular 3G"
+      mcc="425"
+      mnc="15"
+      apn="hcminternet"
+      type="default"
+  />
+
   <apn carrier="BATELCO Internet"
       mcc="426"
       mnc="01"
@@ -2898,6 +3036,13 @@
       user="internet"
       password="internet"
       type="default,supl"
+  />
+
+  <apn carrier="Rami Levi 3G"
+      mcc="425"
+      mnc="16"
+      apn="internet.rl"
+      type="default"
   />
 
   <apn carrier="BATELCO HTTP"
@@ -3109,18 +3254,14 @@
   <apn carrier="3"
       mcc="454"
       mnc="03"
-      apn="mobile.three.com.hk"
-      type="default,dun,hipri"
+      apn="imobile.three.com.hk"
+      mmsc="http://mms.um.three.com.hk:10021/mmsc"
+      mmsproxy="mms.three.com.hk"
+      mmsport="8799"
+      type="default,mms,dun,hipri"
       authtype="3"
   />
   
-  <apn carrier="Tethering"
-      mcc="454"
-      mnc="03"
-      apn="share.lte.three.com.hk"
-      type="dun"
-  />
-
   <apn carrier="3(2G) Network"
       mcc="454"
       mnc="04"
@@ -3197,6 +3338,29 @@
       proxy="172.31.31.36"
       port="8080"
       type="default,supl"
+  />
+
+  <apn carrier="CMHK Data"
+      mcc="454"
+      mnc="13"
+      apn="cmhk"
+      type="default,supl"
+  />
+
+  <apn carrier="CMHK Network"
+      mcc="454"
+      mnc="13"
+      apn="peoples.net"
+      type="default,supl"
+  />
+
+  <apn carrier="CMHK HTTP Setting"
+      mcc="454"
+      mnc="13"
+      proxy="172.31.31.36"
+      port="8080"
+      apn="peoples.net"
+      type="default"
   />
 
   <apn carrier="SmarTone"
@@ -3287,11 +3451,25 @@
       type="default,supl"
   />
 
-  <apn carrier="CTM"
+  <apn carrier="CTM Data"
+      mcc="455"
+      mnc="01"
+      apn="ctm-mobile"
+      proxy="192.168.99.2"
+      port="8080"
+      type="default"
+  />
+
+  <apn carrier="CTM(Prepaid)"
       mcc="455"
       mnc="01"
       apn="ctmprepaid"
-      type="default,supl"
+      proxy="192.168.99.2"
+      port="8080"
+      mmsc="http://mms.wap.ctm.net:8002"
+      mmsproxy="192.168.99.3"
+      mmsport="8080"
+      type="default,mms"
   />
 
   <apn carrier="3 Macau"
@@ -3966,42 +4144,18 @@
       type="default,supl"
   />
 
-  <apn carrier="MiWorld GPRS"
-      mcc="525"
-      mnc="03"
-      apn="miworld"
-      user="+65"
-      password="user123"
-      proxy="172.16.1.23"
-      port="8081"
-      type="default,supl"
-  />
-
-  <apn carrier="MiWorld GPRS prepaid"
-      mcc="525"
-      mnc="03"
-      apn="miworldmcard"
-      user="+65"
-      password="user123"
-      proxy="172.16.1.23"
-      port="8081"
-      type="default,supl"
-  />
-
-  <apn carrier="MiWorld Internet"
+  <apn carrier="Sunsurf Internet"
       mcc="525"
       mnc="03"
       apn="sunsurf"
-      type="default,supl"
+      type="default"
   />
 
-  <apn carrier="MiWorld Internet prepaid"
+  <apn carrier="Starhub"
       mcc="525"
-      mnc="03"
-      apn="sunsurfmcard"
-      user="MSISDN"
-      password="user123"
-      type="default,supl"
+      mnc="05"
+      apn="internet"
+      type="default"
   />
 
   <apn carrier="Gee! 3G/GPRS prepaid"
@@ -4158,46 +4312,46 @@
   <apn carrier="TIM Connect"
       mcc="724"
       mnc="02"
-      apn="timbrasil.br"
+      apn="tim.br"
       user="tim"
       password="tim"
       mmsc="http://mms.tim.br"
       mmsproxy="200.179.66.242"
       mmsport="8080"
-      type="default,supl,mms"
+      type="default,mms"
   />
 
   <apn carrier="TIM Connect"
       mcc="724"
       mnc="03"
-      apn="timbrasil.br"
+      apn="tim.br"
       user="tim"
       password="tim"
       mmsc="http://mms.tim.br"
       mmsproxy="200.179.66.242"
       mmsport="8080"
-      type="default,supl,mms"
+      type="default,mms"
   />
 
   <apn carrier="TIM Connect"
       mcc="724"
       mnc="04"
-      apn="timbrasil.br"
+      apn="tim.br"
       user="tim"
       password="tim"
       mmsc="http://mms.tim.br"
       mmsproxy="200.179.66.242"
       mmsport="8080"
-      type="default,supl,mms"
+      type="default,mms"
   />
 
-  <apn carrier="Java Session"
+  <apn carrier="Claro Dados"
       mcc="724"
       mnc="05"
-      apn="java.claro.com.br"
+      apn="claro.com.br"
       user="claro"
       password="claro"
-      type="default,supl"
+      type="default"
   />
 
   <apn carrier="Claro Foto"
@@ -4222,6 +4376,7 @@
       mmsproxy="200.142.130.104"
       mmsport="80"
       type="mms"
+      authtype="3"
   />
 
   <apn carrier="Vivo Internet"
@@ -4230,7 +4385,8 @@
       apn="zap.vivo.com.br"
       user="vivo"
       password="vivo"
-      type="default,supl"
+      type="default"
+      authtype="3"
   />
 
   <apn carrier="SCTL MMS"
@@ -4264,6 +4420,7 @@
       mmsproxy="200.142.130.104"
       mmsport="80"
       type="mms"
+      authtype="3"
   />
 
   <apn carrier="Vivo Internet"
@@ -4272,7 +4429,8 @@
       apn="zap.vivo.com.br"
       user="vivo"
       password="vivo"
-      type="default,supl"
+      type="default"
+      authtype="3"
   />
 
   <apn carrier="Vivo MMS"
@@ -4285,6 +4443,7 @@
       mmsproxy="200.142.130.104"
       mmsport="80"
       type="mms"
+      authtype="3"
   />
 
   <apn carrier="Vivo Internet"
@@ -4293,7 +4452,8 @@
       apn="zap.vivo.com.br"
       user="vivo"
       password="vivo"
-      type="default,supl"
+      type="default"
+      authtype="3"
   />
 
   <apn carrier="BrT Modem"
@@ -4348,6 +4508,7 @@
       mmsproxy="200.142.130.104"
       mmsport="80"
       type="mms"
+      authtype="3"
   />
 
   <apn carrier="Vivo Internet"
@@ -4356,7 +4517,8 @@
       apn="zap.vivo.com.br"
       user="vivo"
       password="vivo"
-      type="default,supl"
+      type="default"
+      authtype="3"
   />
 
   <apn carrier="AmazôniaC MMS"
@@ -4371,11 +4533,13 @@
       type="mms"
   />
 
-  <apn carrier="OI GPRS"
+  <apn carrier="OI Dados"
       mcc="724"
       mnc="31"
       apn="gprs.oi.com.br"
-      type="default,supl"
+      user="oi"
+      password="oi"
+      type="default"
   />
 
   <apn carrier="OI MMS"
