@@ -28,8 +28,9 @@ DEVICE_PACKAGE_OVERLAYS := \
 # the actual meat of the device-specific product definition
 $(call inherit-product, device/asus/grouper/device-common.mk)
 
-# inherit from the non-open-source side, if present
-$(call inherit-product-if-exists, vendor/asus/tilapia/device-vendor.mk)
+# inherit from the non-open-source side
+$(call inherit-product, vendor/asus/tilapia/device-vendor.mk)
+$(call inherit-product, vendor/unknown/device-vendor.mk)
 
 # Inherit some GSM stuff
 $(call inherit-product, device/asus/tilapia/gsm.mk)
