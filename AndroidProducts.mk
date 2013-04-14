@@ -1,2 +1,2 @@
 PRODUCT_MAKEFILES := \
-	$(LOCAL_DIR)/sm_tilapia.mk
+	$(LOCAL_DIR)/full_tilapia.mk
