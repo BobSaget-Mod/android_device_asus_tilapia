@@ -29,8 +29,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Discard inherited values and use our own instead.
 PRODUCT_NAME := full_tilapia
 PRODUCT_DEVICE := tilapia
-PRODUCT_BRAND := Full Android on Tilapia
-PRODUCT_MODEL := Android
+PRODUCT_BRAND := Android
+PRODUCT_MODEL := AOSP on Tilapia
 
 # Don't restrict vendor folder
 PRODUCT_RESTRICT_VENDOR_FILES := false
